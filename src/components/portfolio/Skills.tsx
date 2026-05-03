@@ -76,7 +76,7 @@ export const Skills = () => {
       <div className="mx-auto max-w-6xl">
         <SectionHeading kicker="// 02 — Skills" title="Core Competencies in Control Systems." />
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {groups.map((g) => (
             <div
               key={g.title}
