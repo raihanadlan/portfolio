@@ -50,9 +50,9 @@ export const Hero = () => {
           {/* Stat strip */}
           <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
             {[
-              { v: "6+", l: "Years" },
-              { v: "40+", l: "Systems shipped" },
-              { v: "12", l: "Industries" },
+              { v: "3rd", l: "Year Student" },
+              { v: "5+", l: "Projects Completed" },
+              { v: "3", l: "Core Domains" },
             ].map((s) => (
               <div key={s.l}>
                 <div className="text-2xl font-bold text-gradient">{s.v}</div>
