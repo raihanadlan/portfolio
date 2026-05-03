@@ -95,40 +95,32 @@ export const RadialDashboard = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="relative w-40 h-40 sm:w-52 sm:h-52 rounded-full glass flex flex-col items-center justify-center text-center px-4">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10" />
-          <span className="relative text-[10px] tracking-[0.3em] text-neon-cyan/80 font-mono uppercase">
-            Automation Eng.
+          <span className="relative text-lg sm:text-xl font-bold text-gradient leading-tight tracking-wide">
+            AUTOMATION
+            <br />
+            ENGINEERING
           </span>
-          <span className="relative text-4xl sm:text-5xl font-bold text-gradient mt-2 leading-none">
-            85%
-          </span>
-          <span className="relative text-[10px] text-muted-foreground mt-1 font-mono uppercase tracking-wider">
-            Avg Proficiency
-          </span>
-          <div className="relative mt-2 flex items-center gap-1.5 text-[9px] font-mono">
-            <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
-            <span className="text-neon-cyan/90">PLC · HMI · SCADA</span>
-          </div>
         </div>
       </div>
 
       {/* Floating data labels */}
       <div className="absolute top-4 right-2 sm:top-6 sm:right-0 glass rounded-lg px-3 py-2 text-xs animate-float">
-        <div className="text-neon-cyan font-mono">92%</div>
-        <div className="text-muted-foreground text-[10px]">Automation</div>
+        <div className="text-neon-cyan font-mono">85%</div>
+        <div className="text-muted-foreground text-[10px]">PLC Programming</div>
       </div>
       <div
         className="absolute bottom-8 left-0 sm:left-2 glass rounded-lg px-3 py-2 text-xs animate-float"
         style={{ animationDelay: "1.5s" }}
       >
-        <div className="text-neon-purple font-mono">84%</div>
-        <div className="text-muted-foreground text-[10px]">Robotics</div>
+        <div className="text-neon-purple font-mono">80%</div>
+        <div className="text-muted-foreground text-[10px]">HMI & SCADA</div>
       </div>
       <div
         className="absolute top-1/2 -right-2 sm:-right-4 glass rounded-lg px-3 py-2 text-xs animate-float"
         style={{ animationDelay: "3s" }}
       >
-        <div className="text-neon-pink font-mono">78%</div>
-        <div className="text-muted-foreground text-[10px]">Code</div>
+        <div className="text-neon-pink font-mono">75%</div>
+        <div className="text-muted-foreground text-[10px]">Embedded Systems</div>
       </div>
     </div>
   );
