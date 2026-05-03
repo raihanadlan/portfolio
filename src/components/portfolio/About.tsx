@@ -1,18 +1,18 @@
-import { Cpu, Workflow, Sparkles } from "lucide-react";
+import { CircuitBoard, MonitorCog, Cpu } from "lucide-react";
 
 const cards = [
   {
-    icon: Cpu,
+    icon: CircuitBoard,
     title: "PLC Programming",
     body: "Ladder logic development and industrial control system implementation.",
   },
   {
-    icon: Workflow,
+    icon: MonitorCog,
     title: "HMI & SCADA",
     body: "System configuration and real-time monitoring integration.",
   },
   {
-    icon: Sparkles,
+    icon: Cpu,
     title: "Embedded Systems",
     body: "ESP32-based control and motor system development.",
   },
