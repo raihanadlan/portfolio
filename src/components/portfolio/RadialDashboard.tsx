@@ -4,9 +4,9 @@
  */
 export const RadialDashboard = () => {
   const ringData = [
-    { r: 140, value: 0.92, color: "hsl(var(--neon-cyan))", label: "Automation" },
-    { r: 115, value: 0.84, color: "hsl(var(--neon-purple))", label: "Robotics" },
-    { r: 90, value: 0.78, color: "hsl(var(--neon-pink))", label: "Code" },
+    { r: 140, value: 0.85, color: "hsl(var(--neon-cyan))", label: "PLC Programming" },
+    { r: 115, value: 0.80, color: "hsl(var(--neon-purple))", label: "HMI & SCADA" },
+    { r: 90, value: 0.75, color: "hsl(var(--neon-pink))", label: "Embedded Systems" },
   ];
 
   return (
