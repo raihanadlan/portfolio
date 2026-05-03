@@ -96,13 +96,15 @@ export const RadialDashboard = () => {
         <div className="relative w-40 h-40 sm:w-52 sm:h-52 rounded-full glass flex flex-col items-center justify-center text-center px-4">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10" />
           <span className="relative text-[10px] tracking-[0.3em] text-neon-cyan/80 font-mono uppercase">
-            System
+            Focus
           </span>
-          <span className="relative text-4xl sm:text-5xl font-bold text-gradient mt-1">
-            v4.0
+          <span className="relative text-xl sm:text-2xl font-bold text-gradient mt-2 leading-tight">
+            AUTOMATION
+            <br />
+            ENGINEERING
           </span>
           <span className="relative text-[10px] text-muted-foreground mt-2 font-mono">
-            ENGINEERED · 2026
+            EST · 2026
           </span>
         </div>
       </div>
