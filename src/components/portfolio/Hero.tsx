@@ -18,17 +18,16 @@ export const Hero = () => {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+            <span className="text-gradient">Automation</span>
+            <br />
             Engineering
-            <br />
-            <span className="text-gradient">intelligent</span>
-            <br />
-            machines.
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-md leading-relaxed">
-            I'm <span className="text-foreground font-medium">Aris Vex</span> — an
-            automation engineer & robotics designer building control systems,
-            machine vision pipelines, and the soft edges of hard technology.
+            I'm <span className="text-foreground font-medium">Fadhlan Raihan Fitranto</span>,
+            an Automation Engineering student specializing in PLC, HMI, and
+            industrial control systems, with hands-on experience in manufacturing
+            environments.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
