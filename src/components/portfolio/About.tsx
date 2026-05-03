@@ -27,19 +27,18 @@ export const About = () => {
         <div className="grid lg:grid-cols-12 gap-10 mt-16">
           <div className="lg:col-span-5">
             <p className="text-xl leading-relaxed text-foreground/90">
-              I build the layer between physical machines and the software that
-              gives them intent.
+              Automation Engineering student at Diponegoro University with a
+              focus on PLC programming, HMI configuration, and industrial
+              control systems.
             </p>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              For the past six years I've designed automation systems for
-              manufacturing lines, warehouse robotics, and research labs —
-              shipping production code that runs 24/7 next to spinning steel.
-              I care about latency budgets, thermal margins, and the small
-              moments where great UX makes a tired operator's shift easier.
+              Hands-on experience in process industrial environments through
+              internship work involving machine maintenance, control systems,
+              and ladder logic implementation.
             </p>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Currently exploring autonomous mobile robots and edge ML for
-              vision-guided manipulation.
+              Interested in improving system reliability, efficiency, and
+              performance in industrial automation processes.
             </p>
           </div>
 
