@@ -5,43 +5,30 @@ type Group = { title: string; color: string; skills: Skill[] };
 
 const groups: Group[] = [
   {
-    title: "Programming",
+    title: "Industrial Control",
     color: "hsl(var(--neon-cyan))",
     skills: [
-      { name: "Python", value: 0.94 },
-      { name: "C++ / Embedded", value: 0.82 },
-      { name: "TypeScript", value: 0.78 },
-      { name: "Rust", value: 0.6 },
+      { name: "PLC Programming", value: 0.85 },
+      { name: "HMI Configuration", value: 0.8 },
+      { name: "SCADA Systems", value: 0.8 },
     ],
   },
   {
-    title: "Automation",
+    title: "Embedded & Control",
     color: "hsl(var(--neon-purple))",
     skills: [
-      { name: "PLC / Ladder", value: 0.88 },
-      { name: "SCADA / HMI", value: 0.83 },
-      { name: "CI/CD Pipelines", value: 0.75 },
-      { name: "Industrial IoT", value: 0.81 },
+      { name: "ESP32 / STM32", value: 0.75 },
+      { name: "PID Control", value: 0.8 },
+      { name: "Motor Control (PWM)", value: 0.75 },
     ],
   },
   {
-    title: "Robotics",
+    title: "Engineering Tools",
     color: "hsl(var(--neon-pink))",
     skills: [
-      { name: "ROS / ROS2", value: 0.9 },
-      { name: "SLAM & Navigation", value: 0.78 },
-      { name: "Computer Vision", value: 0.85 },
-      { name: "Motion Planning", value: 0.72 },
-    ],
-  },
-  {
-    title: "Tools",
-    color: "hsl(var(--neon-blue))",
-    skills: [
-      { name: "Docker / K8s", value: 0.82 },
-      { name: "Git / DevOps", value: 0.9 },
-      { name: "Figma", value: 0.7 },
-      { name: "Linux", value: 0.92 },
+      { name: "MATLAB", value: 0.8 },
+      { name: "CX-Programmer", value: 0.85 },
+      { name: "SolidWorks", value: 0.75 },
     ],
   },
 ];
@@ -87,7 +74,7 @@ export const Skills = () => {
   return (
     <section id="skills" className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading kicker="// 02 — Skills" title="Calibrated across the stack." />
+        <SectionHeading kicker="// 02 — Skills" title="Core Competencies in Control Systems." />
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {groups.map((g) => (
