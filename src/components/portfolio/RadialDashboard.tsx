@@ -96,16 +96,18 @@ export const RadialDashboard = () => {
         <div className="relative w-40 h-40 sm:w-52 sm:h-52 rounded-full glass flex flex-col items-center justify-center text-center px-4">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10" />
           <span className="relative text-[10px] tracking-[0.3em] text-neon-cyan/80 font-mono uppercase">
-            Focus
+            Automation Eng.
           </span>
-          <span className="relative text-xl sm:text-2xl font-bold text-gradient mt-2 leading-tight">
-            AUTOMATION
-            <br />
-            ENGINEERING
+          <span className="relative text-4xl sm:text-5xl font-bold text-gradient mt-2 leading-none">
+            85%
           </span>
-          <span className="relative text-[10px] text-muted-foreground mt-2 font-mono">
-            EST · 2026
+          <span className="relative text-[10px] text-muted-foreground mt-1 font-mono uppercase tracking-wider">
+            Avg Proficiency
           </span>
+          <div className="relative mt-2 flex items-center gap-1.5 text-[9px] font-mono">
+            <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
+            <span className="text-neon-cyan/90">PLC · HMI · SCADA</span>
+          </div>
         </div>
       </div>
 
