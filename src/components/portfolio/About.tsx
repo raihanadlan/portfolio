@@ -22,7 +22,7 @@ export const About = () => {
   return (
     <section id="about" className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading kicker="// 01 — About" title="A short signal in a noisy field." />
+        <SectionHeading kicker="// 01 — About" title="Automation engineering focused on industrial control systems." />
 
         <div className="grid lg:grid-cols-12 gap-10 mt-16">
           <div className="lg:col-span-5">
