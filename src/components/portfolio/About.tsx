@@ -3,18 +3,18 @@ import { Cpu, Workflow, Sparkles } from "lucide-react";
 const cards = [
   {
     icon: Cpu,
-    title: "Hardware fluent",
-    body: "From PLCs and ROS2 nodes to embedded firmware on bare-metal MCUs — I speak the language of machines.",
+    title: "PLC Programming",
+    body: "Ladder logic development and industrial control system implementation.",
   },
   {
     icon: Workflow,
-    title: "Systems thinker",
-    body: "I design pipelines where sensors, models, and humans meet — robust, observable, and graceful under failure.",
+    title: "HMI & SCADA",
+    body: "System configuration and real-time monitoring integration.",
   },
   {
     icon: Sparkles,
-    title: "Crafted interfaces",
-    body: "Operator dashboards and tooling that feel like instruments. Latency, clarity, and beauty are all features.",
+    title: "Embedded Systems",
+    body: "ESP32-based control and motor system development.",
   },
 ];
 
