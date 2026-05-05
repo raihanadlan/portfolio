@@ -3,44 +3,44 @@ import { SectionHeading } from "./About";
 
 const projects = [
   {
-    title: "Helix · Vision-Guided Pick Cell",
-    desc: "ROS2 + ML pipeline that picks unsorted parts from bins at 1200 cycles/hour with sub-mm placement.",
-    stack: ["ROS2", "Python", "OpenCV", "ONNX"],
+    title: "SCADA-Based Tank Filling System",
+    desc: "Automated tank filling system with SCADA integration for real-time monitoring and control. Designed to improve accuracy, efficiency, and system reliability in fluid handling processes.",
+    stack: ["SCADA", "PLC", "Industrial Automation", "Control System"],
     accent: "from-neon-cyan/40 to-neon-purple/40",
     glyph: "◐",
   },
   {
-    title: "Forge · Industrial Telemetry",
-    desc: "Real-time SCADA replacement with edge buffering and a glass-cockpit operator UI for foundries.",
-    stack: ["TypeScript", "Rust", "TimescaleDB"],
+    title: "DC Motor Control with PID",
+    desc: "Implemented speed, direction, and torque control of a 12V DC motor using PID control. Focused on system stability, response tuning, and performance optimization.",
+    stack: ["PID Control", "Motor Control", "Embedded System"],
     accent: "from-neon-purple/40 to-neon-pink/40",
     glyph: "◇",
   },
   {
-    title: "Drift · Autonomous Floor Bot",
-    desc: "SLAM-based mobile robot for warehouse line-replenishment with dynamic obstacle re-planning.",
-    stack: ["C++", "ROS2", "LiDAR", "Nav2"],
+    title: "Automatic Heating Control System (ESP32)",
+    desc: "Developed an embedded control system using ESP32 to regulate temperature automatically based on sensor feedback and control logic.",
+    stack: ["ESP32", "Embedded System", "Control Logic"],
     accent: "from-neon-pink/40 to-neon-blue/40",
     glyph: "◉",
   },
   {
-    title: "Pulse · Predictive Maintenance",
-    desc: "Vibration & thermal anomaly detection on 400+ motors, deployed to edge gateways across 3 plants.",
-    stack: ["Python", "PyTorch", "MQTT", "Grafana"],
+    title: "PWM & Motor Control Analysis",
+    desc: "Implemented and analyzed SPWM, SVPWM, and Six-Step Commutation methods for motor control systems to evaluate efficiency and performance.",
+    stack: ["SPWM", "SVPWM", "Power Electronics", "Motor Drive"],
     accent: "from-neon-blue/40 to-neon-cyan/40",
     glyph: "◈",
   },
   {
-    title: "Atlas · Operator HMI Kit",
-    desc: "Design system + React component library for industrial touchscreens. Glove-friendly, sun-readable.",
-    stack: ["React", "Tailwind", "Figma"],
+    title: "IHSG Prediction using Deep Learning",
+    desc: "Developed a deep learning model in MATLAB to predict IHSG trends, focusing on data processing, modeling, and performance evaluation.",
+    stack: ["Deep Learning", "MATLAB", "Data Analysis"],
     accent: "from-neon-cyan/40 to-neon-pink/40",
     glyph: "▣",
   },
   {
-    title: "Echo · Lab Automation Suite",
-    desc: "Liquid-handling robot orchestration with experiment versioning for a synthetic biology lab.",
-    stack: ["Python", "FastAPI", "Postgres"],
+    title: "Industrial PLC & HMI System Implementation",
+    desc: "Worked on PLC ladder logic programming and HMI configuration in a production environment. Involved in machine maintenance and control system optimization for industrial processes.",
+    stack: ["PLC", "HMI", "Industrial Automation", "Maintenance"],
     accent: "from-neon-purple/40 to-neon-cyan/40",
     glyph: "✦",
   },
@@ -50,7 +50,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading kicker="// 03 — Projects" title="Selected systems, shipped." />
+        <SectionHeading kicker="// 03 — Projects" title="Relevant Project in Industrial Automation" />
 
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p) => (
