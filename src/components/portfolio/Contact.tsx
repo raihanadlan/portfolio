@@ -107,10 +107,10 @@ export const Contact = () => {
         </div>
 
         <footer className="mt-24 pt-8 border-t border-border flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground font-mono">
-          <span>© 2026 Aris Vex · All systems operational</span>
+          <span>© 2026 Fadhlan Raihan Fitranto · All systems operational</span>
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
-            BERLIN · 52.5200° N
+            SEMARANG · 6.99° S
           </span>
         </footer>
       </div>
