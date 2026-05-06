@@ -20,14 +20,14 @@ export const Hero = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
             <span className="text-gradient">Automation</span>
             <br />
-            Engineering
+            Engineering Student
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-md leading-relaxed">
             I'm <span className="text-foreground font-medium">Fadhlan Raihan Fitranto</span>,
-            an Automation Engineering student specializing in PLC, HMI, and
-            industrial control systems, with hands-on experience in manufacturing
-            environments.
+            specializing in <span className="text-foreground/90">Industrial Instrumentation
+            &amp; Control Systems</span> — building reliable PLC, HMI, and SCADA solutions
+            for the manufacturing industry.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
