@@ -32,9 +32,9 @@ export const Navbar = () => {
         <a href="#hero" className="flex items-center gap-2 group">
           <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg glass">
             <span className="absolute inset-0 rounded-lg bg-gradient-to-br from-neon-cyan/40 to-neon-purple/40 opacity-60 group-hover:opacity-100 transition" />
-            <span className="relative font-bold text-sm text-gradient">AV</span>
+            <span className="relative font-bold text-sm text-gradient">FR</span>
           </span>
-          <span className="font-semibold tracking-tight">Aris Vex</span>
+          <span className="font-semibold tracking-tight">Fadhlan Raihan</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">

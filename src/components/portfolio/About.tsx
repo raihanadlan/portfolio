@@ -22,23 +22,25 @@ export const About = () => {
   return (
     <section id="about" className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading kicker="// 01 — About" title="Automation engineering focused on industrial control systems." />
+        <SectionHeading kicker="// 01 — About" title="Industrial Instrumentation & Control Systems." />
 
         <div className="grid lg:grid-cols-12 gap-10 mt-16">
           <div className="lg:col-span-5">
             <p className="text-xl leading-relaxed text-foreground/90">
-              Automation Engineering student at Diponegoro University with a
-              focus on PLC programming, HMI configuration, and industrial
-              control systems.
+              Automation Engineering student at Diponegoro University
+              (GPA 3.50 / 4.00), focused on PLC programming, HMI configuration,
+              SCADA, and instrumentation for the process industry.
             </p>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Hands-on experience in process industrial environments through
-              internship work involving machine maintenance, control systems,
-              and ladder logic implementation.
+              Recently completed a production internship at PT Tirta Investama
+              Klaten — handling HMI addressing, ladder logic for 19L AQUA filling
+              and automatic leak-testing machines, and preventive maintenance on
+              filling, high-pressure pre-wash, and leak tester equipment.
             </p>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Interested in improving system reliability, efficiency, and
-              performance in industrial automation processes.
+              Currently serving as Head of Academic Division (Riset dan Keilmuan)
+              at HIMATRO SV Undip, with strong leadership, analytical, and
+              quick-adaptability skills.
             </p>
           </div>
 
