@@ -4,54 +4,54 @@
 
 @layer base {
   :root {
-    /* Futuristic dark theme */
-    --background: 230 25% 5%;
-    --foreground: 210 40% 98%;
+    /* Calm engineering dark theme — deep slate, muted teal, warm amber */
+    --background: 220 22% 6%;
+    --foreground: 210 25% 92%;
 
-    --card: 230 25% 7%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 22% 8%;
+    --card-foreground: 210 25% 92%;
 
-    --popover: 230 25% 7%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 22% 8%;
+    --popover-foreground: 210 25% 92%;
 
-    --primary: 190 100% 55%;
-    --primary-foreground: 230 30% 5%;
+    --primary: 185 40% 55%;
+    --primary-foreground: 220 30% 6%;
 
-    --secondary: 270 80% 65%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 15% 65%;
+    --secondary-foreground: 220 30% 6%;
 
-    --muted: 230 20% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 18% 12%;
+    --muted-foreground: 215 12% 60%;
 
-    --accent: 285 95% 65%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 32 55% 60%;
+    --accent-foreground: 220 30% 6%;
 
-    --neon-cyan: 190 100% 55%;
-    --neon-purple: 270 90% 65%;
-    --neon-pink: 320 95% 65%;
-    --neon-blue: 220 100% 60%;
+    --neon-cyan: 185 42% 58%;
+    --neon-purple: 245 28% 62%;
+    --neon-pink: 32 55% 62%;
+    --neon-blue: 210 35% 58%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 25% 92%;
 
-    --border: 230 20% 15%;
-    --input: 230 20% 12%;
-    --ring: 190 100% 55%;
+    --border: 220 18% 15%;
+    --input: 220 18% 12%;
+    --ring: 185 40% 55%;
 
     --radius: 1rem;
 
-    /* Gradients */
-    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(270 80% 25% / 0.4), transparent 60%),
-                       radial-gradient(circle at 80% 80%, hsl(190 100% 30% / 0.3), transparent 50%),
-                       radial-gradient(circle at 10% 60%, hsl(320 80% 30% / 0.25), transparent 55%);
-    --gradient-neon: linear-gradient(135deg, hsl(190 100% 55%), hsl(270 90% 65%), hsl(320 95% 65%));
-    --gradient-text: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(190 100% 75%) 50%, hsl(270 80% 75%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsl(230 30% 15% / 0.6), hsl(230 30% 8% / 0.3));
+    /* Gradients — softer, more atmospheric */
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(220 35% 14% / 0.55), transparent 60%),
+                       radial-gradient(circle at 80% 80%, hsl(185 30% 14% / 0.35), transparent 55%),
+                       radial-gradient(circle at 10% 60%, hsl(32 30% 12% / 0.25), transparent 55%);
+    --gradient-neon: linear-gradient(135deg, hsl(185 42% 58%), hsl(245 28% 62%), hsl(32 55% 62%));
+    --gradient-text: linear-gradient(135deg, hsl(210 25% 96%) 0%, hsl(185 35% 78%) 55%, hsl(32 45% 75%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(220 25% 12% / 0.55), hsl(220 25% 7% / 0.35));
 
-    /* Shadows / glow */
-    --glow-cyan: 0 0 40px hsl(190 100% 55% / 0.4), 0 0 80px hsl(190 100% 55% / 0.2);
-    --glow-purple: 0 0 40px hsl(270 90% 65% / 0.4), 0 0 80px hsl(270 90% 65% / 0.2);
-    --glow-soft: 0 8px 32px hsl(230 60% 5% / 0.6);
+    /* Shadows / glow — restrained */
+    --glow-cyan: 0 0 28px hsl(185 42% 58% / 0.22), 0 0 60px hsl(185 42% 58% / 0.1);
+    --glow-purple: 0 0 28px hsl(245 28% 62% / 0.2), 0 0 60px hsl(245 28% 62% / 0.08);
+    --glow-soft: 0 8px 32px hsl(220 40% 4% / 0.7);
 
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
   }
