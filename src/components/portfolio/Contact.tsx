@@ -4,10 +4,10 @@ import { SectionHeading } from "./About";
 import { toast } from "sonner";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:hello@arisvex.dev" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/raihanadlann" },
+  { icon: Github, label: "GitHub", href: "https://github.com/" },
+  { icon: Twitter, label: "Instagram", href: "https://instagram.com/raihanadlann" },
+  { icon: Mail, label: "Email", href: "mailto:fadhlanfitranto@gmail.com" },
 ];
 
 export const Contact = () => {
@@ -75,14 +75,14 @@ export const Contact = () => {
                 Direct
               </div>
               <a
-                href="mailto:hello@arisvex.dev"
-                className="block mt-3 text-2xl font-semibold text-gradient hover:opacity-80 transition"
+                href="mailto:fadhlanfitranto@gmail.com"
+                className="block mt-3 text-2xl font-semibold text-gradient hover:opacity-80 transition break-all"
               >
-                hello@arisvex.dev
+                fadhlanfitranto@gmail.com
               </a>
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                Based in Berlin · Available worldwide for remote and on-site
-                engagements.
+                Based in Semarang, Central Java · Open to internship and
+                collaboration in industrial automation.
               </p>
             </div>
 
@@ -107,10 +107,10 @@ export const Contact = () => {
         </div>
 
         <footer className="mt-24 pt-8 border-t border-border flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground font-mono">
-          <span>© 2026 Aris Vex · All systems operational</span>
+          <span>© 2026 Fadhlan Raihan Fitranto · All systems operational</span>
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
-            BERLIN · 52.5200° N
+            SEMARANG · 6.99° S
           </span>
         </footer>
       </div>

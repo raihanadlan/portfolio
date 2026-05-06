@@ -2,28 +2,28 @@ import { SectionHeading } from "./About";
 
 const items = [
   {
-    year: "2024 — Now",
-    role: "Lead Automation Engineer",
-    org: "Northwind Robotics",
-    desc: "Leading a 6-person team building autonomous mobile robotics for warehouse logistics.",
+    year: "2025 — 2026",
+    role: "Head of Academic Division (Riset dan Keilmuan)",
+    org: "HIMATRO SV Undip",
+    desc: "Coordinated and supervised research and scientific programs, planned and evaluated academic activities, and fostered a research-oriented culture among students.",
   },
   {
-    year: "2022 — 2024",
-    role: "Senior Controls Engineer",
-    org: "Aether Industrial",
-    desc: "Architected SCADA + edge ML stack across 3 manufacturing plants. Cut downtime 38%.",
+    year: "Jan 2026",
+    role: "Production Division Intern",
+    org: "PT Tirta Investama Klaten",
+    desc: "Performed HMI addressing and PLC configuration, ladder logic programming for 19L AQUA filling and automatic leak-testing machines, and preventive maintenance on Filling, High Pressure Pre-Wash, and Leak Tester equipment.",
   },
   {
-    year: "2020 — 2022",
-    role: "Robotics Engineer",
-    org: "Helix Labs",
-    desc: "Delivered a vision-guided pick-and-place cell that became the company's flagship product.",
+    year: "2024 — 2025",
+    role: "Staff — Academic Division (Riset dan Keilmuan)",
+    org: "HIMATRO SV Undip",
+    desc: "Managed student research and academic study activities, organized seminars and scientific discussions, and assisted students in writing scientific papers.",
   },
   {
-    year: "2018 — 2020",
-    role: "Embedded Software Engineer",
-    org: "Volt Systems",
-    desc: "Firmware for industrial sensors. Shipped 12 hardware revisions and an in-house build pipeline.",
+    year: "2023 — Present",
+    role: "Automation Engineering Student",
+    org: "Diponegoro University — Vocational School",
+    desc: "Pursuing Automation Engineering with a current GPA of 3.50 / 4.00, focusing on PLC, HMI, SCADA, embedded systems, and industrial control.",
   },
 ];
 
