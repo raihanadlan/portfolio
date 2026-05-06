@@ -1,12 +1,12 @@
-import { Github, Linkedin, Send, Twitter, Mail } from "lucide-react";
+import { Linkedin, Send, Instagram, Mail, Youtube } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "./About";
 import { toast } from "sonner";
 
 const socials = [
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/raihanadlann" },
-  { icon: Github, label: "GitHub", href: "https://github.com/" },
-  { icon: Twitter, label: "Instagram", href: "https://instagram.com/raihanadlann" },
+  { icon: Youtube, label: "YouTube", href: "https://youtube.com/" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/raihanadlann" },
   { icon: Mail, label: "Email", href: "mailto:fadhlanfitranto@gmail.com" },
 ];
 
