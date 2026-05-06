@@ -4,10 +4,10 @@ import { SectionHeading } from "./About";
 import { toast } from "sonner";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:hello@arisvex.dev" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/raihanadlann" },
+  { icon: Github, label: "GitHub", href: "https://github.com/" },
+  { icon: Twitter, label: "Instagram", href: "https://instagram.com/raihanadlann" },
+  { icon: Mail, label: "Email", href: "mailto:fadhlanfitranto@gmail.com" },
 ];
 
 export const Contact = () => {
