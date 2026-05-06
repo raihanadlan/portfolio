@@ -75,14 +75,14 @@ export const Contact = () => {
                 Direct
               </div>
               <a
-                href="mailto:hello@arisvex.dev"
-                className="block mt-3 text-2xl font-semibold text-gradient hover:opacity-80 transition"
+                href="mailto:fadhlanfitranto@gmail.com"
+                className="block mt-3 text-2xl font-semibold text-gradient hover:opacity-80 transition break-all"
               >
-                hello@arisvex.dev
+                fadhlanfitranto@gmail.com
               </a>
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                Based in Berlin · Available worldwide for remote and on-site
-                engagements.
+                Based in Semarang, Central Java · Open to internship and
+                collaboration in industrial automation.
               </p>
             </div>
 
