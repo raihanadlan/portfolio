@@ -1,12 +1,33 @@
-import { Linkedin, Send, Mail, Youtube } from "lucide-react";
+import { Linkedin, Send, Mail, Youtube, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "./About";
 import { toast } from "sonner";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/fadhlan-raihan-fitranto-5a5a63256" },
-  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@fadhlanraihanfitranto7005?si=P-vUqtsEwYyiZw4O" },
-  { icon: Mail, label: "Email", href: "mailto:fadhlanfitranto@gmail.com" },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    tooltip: "Buka profil LinkedIn",
+    href: "https://www.linkedin.com/in/fadhlan-raihan-fitranto-5a5a63256",
+  },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    tooltip: "Buka channel YouTube",
+    href: "https://youtube.com/@fadhlanraihanfitranto7005?si=P-vUqtsEwYyiZw4O",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    tooltip: "Kirim email langsung",
+    href: "mailto:fadhlanfitranto@gmail.com",
+  },
 ];
 
 export const Contact = () => {
