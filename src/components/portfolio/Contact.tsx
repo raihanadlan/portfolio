@@ -1,12 +1,33 @@
-import { Linkedin, Send, Mail, Youtube } from "lucide-react";
+import { Linkedin, Send, Mail, Youtube, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "./About";
 import { toast } from "sonner";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/fadhlan-raihan-fitranto-5a5a63256" },
-  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@fadhlanraihanfitranto7005?si=P-vUqtsEwYyiZw4O" },
-  { icon: Mail, label: "Email", href: "mailto:fadhlanfitranto@gmail.com" },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    tooltip: "Buka profil LinkedIn",
+    href: "https://www.linkedin.com/in/fadhlan-raihan-fitranto-5a5a63256",
+  },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    tooltip: "Buka channel YouTube",
+    href: "https://youtube.com/@fadhlanraihanfitranto7005?si=P-vUqtsEwYyiZw4O",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    tooltip: "Kirim email langsung",
+    href: "mailto:fadhlanfitranto@gmail.com",
+  },
 ];
 
 export const Contact = () => {
@@ -89,20 +110,13 @@ export const Contact = () => {
               <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground mb-5">
                 Channels
               </div>
-              <div className="grid grid-cols-2 gap-3">
-                {socials.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    target={s.href.startsWith("mailto:") ? undefined : "_blank"}
-                    rel={s.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                    className="group flex items-center gap-3 px-4 py-3 rounded-xl border border-border hover:border-neon-cyan/60 hover:bg-neon-cyan/5 transition-all"
-                  >
-                    <s.icon className="h-4 w-4 text-muted-foreground group-hover:text-neon-cyan transition" />
-                    <span className="text-sm">{s.label}</span>
-                  </a>
-                ))}
-              </div>
+              <TooltipProvider delayDuration={150}>
+                <div className="grid grid-cols-2 gap-3">
+                  {socials.map((s) => (
+                    <SocialButton key={s.label} {...s} />
+                  ))}
+                </div>
+              </TooltipProvider>
             </div>
           </div>
         </div>
@@ -143,3 +157,62 @@ const Field = ({
     />
   </div>
 );
+
+type SocialItem = {
+  icon: typeof Linkedin;
+  label: string;
+  tooltip: string;
+  href: string;
+};
+
+const SocialButton = ({ icon: Icon, label, tooltip, href }: SocialItem) => {
+  const [loading, setLoading] = useState(false);
+  const isExternal = !href.startsWith("mailto:");
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (loading) return;
+    setLoading(true);
+    toast.success(`Membuka ${label}…`);
+
+    if (isExternal) {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open(href, "_blank", "noopener,noreferrer");
+        setLoading(false);
+      }, 600);
+    } else {
+      setTimeout(() => setLoading(false), 800);
+    }
+  };
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <a
+          href={href}
+          onClick={handleClick}
+          target={isExternal ? "_blank" : undefined}
+          rel={isExternal ? "noopener noreferrer" : undefined}
+          aria-label={tooltip}
+          className="group relative flex items-center gap-3 px-4 py-3 rounded-xl border border-border overflow-hidden hover:border-neon-cyan/60 hover:bg-neon-cyan/5 hover:shadow-[0_0_24px_hsl(var(--neon-cyan)/0.35)] active:scale-[0.97] transition-all duration-300"
+        >
+          <span className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_var(--x,50%)_var(--y,50%),hsl(var(--neon-cyan)/0.18),transparent_60%)]" />
+          {loading ? (
+            <Loader2 className="h-4 w-4 text-neon-cyan animate-spin" />
+          ) : (
+            <Icon className="h-4 w-4 text-muted-foreground group-hover:text-neon-cyan group-hover:scale-110 transition-all duration-300" />
+          )}
+          <span className="text-sm relative">
+            {loading ? "Membuka…" : label}
+          </span>
+          {!loading && (
+            <span className="ml-auto h-1.5 w-1.5 rounded-full bg-neon-cyan/0 group-hover:bg-neon-cyan animate-pulse-glow transition-colors" />
+          )}
+        </a>
+      </TooltipTrigger>
+      <TooltipContent side="top" className="font-mono text-xs">
+        {tooltip}
+      </TooltipContent>
+    </Tooltip>
+  );
+};
