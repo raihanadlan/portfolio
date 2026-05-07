@@ -47,7 +47,7 @@ export const Hero = () => {
           </div>
 
           {/* Stat strip */}
-          <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
+          <div className="mt-14 grid grid-cols-3 gap-6 max-w-md mx-auto">
             {[
               { v: "3rd", l: "Year Student" },
               { v: "5+", l: "Projects Completed" },
@@ -61,11 +61,6 @@ export const Hero = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Right: dashboard */}
-        <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <RadialDashboard />
         </div>
       </div>
     </section>
