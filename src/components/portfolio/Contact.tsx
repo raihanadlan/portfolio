@@ -110,20 +110,13 @@ export const Contact = () => {
               <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground mb-5">
                 Channels
               </div>
-              <div className="grid grid-cols-2 gap-3">
-                {socials.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    target={s.href.startsWith("mailto:") ? undefined : "_blank"}
-                    rel={s.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                    className="group flex items-center gap-3 px-4 py-3 rounded-xl border border-border hover:border-neon-cyan/60 hover:bg-neon-cyan/5 transition-all"
-                  >
-                    <s.icon className="h-4 w-4 text-muted-foreground group-hover:text-neon-cyan transition" />
-                    <span className="text-sm">{s.label}</span>
-                  </a>
-                ))}
-              </div>
+              <TooltipProvider delayDuration={150}>
+                <div className="grid grid-cols-2 gap-3">
+                  {socials.map((s) => (
+                    <SocialButton key={s.label} {...s} />
+                  ))}
+                </div>
+              </TooltipProvider>
             </div>
           </div>
         </div>
