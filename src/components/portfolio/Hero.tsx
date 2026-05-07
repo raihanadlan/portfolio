@@ -11,10 +11,7 @@ export const Hero = () => {
       <div className="relative mx-auto max-w-7xl flex justify-center items-center">
         {/* Left: copy */}
         <div className="animate-fade-up text-center max-w-3xl">
-          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-mono text-muted-foreground mb-8">
-            <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
-            INDEX · 001 — PORTFOLIO 2026
-          </div>
+
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
             <span className="text-gradient">Automation</span>
