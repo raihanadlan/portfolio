@@ -1,12 +1,11 @@
-import { Linkedin, Send, Instagram, Mail, Youtube } from "lucide-react";
+import { Linkedin, Send, Mail, Youtube } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "./About";
 import { toast } from "sonner";
 
 const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/raihanadlann" },
-  { icon: Youtube, label: "YouTube", href: "https://youtube.com/" },
-  { icon: Instagram, label: "Instagram", href: "https://instagram.com/raihanadlann" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/fadhlan-raihan-fitranto-5a5a63256" },
+  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@fadhlanraihanfitranto7005?si=P-vUqtsEwYyiZw4O" },
   { icon: Mail, label: "Email", href: "mailto:fadhlanfitranto@gmail.com" },
 ];
 
@@ -95,6 +94,8 @@ export const Contact = () => {
                   <a
                     key={s.label}
                     href={s.href}
+                    target={s.href.startsWith("mailto:") ? undefined : "_blank"}
+                    rel={s.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
                     className="group flex items-center gap-3 px-4 py-3 rounded-xl border border-border hover:border-neon-cyan/60 hover:bg-neon-cyan/5 transition-all"
                   >
                     <s.icon className="h-4 w-4 text-muted-foreground group-hover:text-neon-cyan transition" />
