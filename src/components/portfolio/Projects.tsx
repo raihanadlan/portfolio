@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: "Industrial PLC & HMI System Implementation",
     desc: "Internship project at PT Tirta Investama Klaten — ladder logic programming and HMI configuration for 19L AQUA filling and automatic leak-testing machines in a live production environment.",
-    stack: ["PLC", "HMI", "Ladder Logic", "Maintenance"],
+    stack: ["PLC", "HMI", "Ladder Logic"],
     accent: "from-neon-purple/40 to-neon-cyan/40",
     glyph: "✦",
   },
