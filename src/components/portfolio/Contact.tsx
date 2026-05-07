@@ -157,3 +157,62 @@ const Field = ({
     />
   </div>
 );
+
+type SocialItem = {
+  icon: typeof Linkedin;
+  label: string;
+  tooltip: string;
+  href: string;
+};
+
+const SocialButton = ({ icon: Icon, label, tooltip, href }: SocialItem) => {
+  const [loading, setLoading] = useState(false);
+  const isExternal = !href.startsWith("mailto:");
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (loading) return;
+    setLoading(true);
+    toast.success(`Membuka ${label}…`);
+
+    if (isExternal) {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open(href, "_blank", "noopener,noreferrer");
+        setLoading(false);
+      }, 600);
+    } else {
+      setTimeout(() => setLoading(false), 800);
+    }
+  };
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <a
+          href={href}
+          onClick={handleClick}
+          target={isExternal ? "_blank" : undefined}
+          rel={isExternal ? "noopener noreferrer" : undefined}
+          aria-label={tooltip}
+          className="group relative flex items-center gap-3 px-4 py-3 rounded-xl border border-border overflow-hidden hover:border-neon-cyan/60 hover:bg-neon-cyan/5 hover:shadow-[0_0_24px_hsl(var(--neon-cyan)/0.35)] active:scale-[0.97] transition-all duration-300"
+        >
+          <span className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_var(--x,50%)_var(--y,50%),hsl(var(--neon-cyan)/0.18),transparent_60%)]" />
+          {loading ? (
+            <Loader2 className="h-4 w-4 text-neon-cyan animate-spin" />
+          ) : (
+            <Icon className="h-4 w-4 text-muted-foreground group-hover:text-neon-cyan group-hover:scale-110 transition-all duration-300" />
+          )}
+          <span className="text-sm relative">
+            {loading ? "Membuka…" : label}
+          </span>
+          {!loading && (
+            <span className="ml-auto h-1.5 w-1.5 rounded-full bg-neon-cyan/0 group-hover:bg-neon-cyan animate-pulse-glow transition-colors" />
+          )}
+        </a>
+      </TooltipTrigger>
+      <TooltipContent side="top" className="font-mono text-xs">
+        {tooltip}
+      </TooltipContent>
+    </Tooltip>
+  );
+};
