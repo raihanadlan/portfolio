@@ -55,7 +55,7 @@ export const Navbar = () => {
           className="hidden md:inline-flex items-center gap-2 text-xs font-medium px-4 py-2 rounded-full glass glass-hover"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
-          Available for work
+          Available for internship
         </a>
       </nav>
     </header>
