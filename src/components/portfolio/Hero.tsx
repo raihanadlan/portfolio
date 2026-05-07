@@ -1,5 +1,4 @@
 import { ArrowRight, Mail } from "lucide-react";
-import { RadialDashboard } from "./RadialDashboard";
 
 export const Hero = () => {
   return (
@@ -9,9 +8,9 @@ export const Hero = () => {
     >
       <div className="absolute inset-0 grid-bg pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+      <div className="relative mx-auto max-w-7xl flex justify-center items-center">
         {/* Left: copy */}
-        <div className="animate-fade-up">
+        <div className="animate-fade-up text-center max-w-3xl">
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-mono text-muted-foreground mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse-glow" />
             INDEX · 001 — PORTFOLIO 2026
@@ -30,7 +29,7 @@ export const Hero = () => {
             for the manufacturing industry.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4 justify-center">
             <a
               href="#projects"
               className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-neon-cyan to-neon-purple text-primary-foreground font-medium text-sm hover:shadow-[0_0_40px_hsl(var(--neon-cyan)/0.6)] transition-all duration-500 hover:-translate-y-0.5"
@@ -48,7 +47,7 @@ export const Hero = () => {
           </div>
 
           {/* Stat strip */}
-          <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
+          <div className="mt-14 grid grid-cols-3 gap-6 max-w-md mx-auto">
             {[
               { v: "3rd", l: "Year Student" },
               { v: "5+", l: "Projects Completed" },
@@ -62,11 +61,6 @@ export const Hero = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Right: dashboard */}
-        <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <RadialDashboard />
         </div>
       </div>
     </section>
